@@ -42,7 +42,7 @@ func main() {
 
 	base.CmdName = args[0] // for error messages
 	if args[0] == "help" {
-		help.Help(os.Stdout, args[1:])
+		help.Help(os.Stderr, args[1:])
 		return
 	}
 
@@ -60,7 +60,7 @@ BigCmdLoop:
 					os.Exit(2)
 				}
 				if args[0] == "help" {
-					help.Help(os.Stdout, append(strings.Split(base.CmdName, " "), args[1:]...))
+					help.Help(os.Stderr, append(strings.Split(base.CmdName, " "), args[1:]...))
 					return
 				}
 				base.CmdName += " " + args[0]
