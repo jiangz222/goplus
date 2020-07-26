@@ -14,7 +14,7 @@
  limitations under the License.
 */
 
-// Package run implements the ``gop repl'' command.
+// Package repl implements the "gop repl" command.
 package repl
 
 import (
