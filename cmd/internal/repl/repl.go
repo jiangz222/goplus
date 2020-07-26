@@ -50,8 +50,8 @@ type repl struct {
 }
 
 const (
-	continuePrompt string = "..."
-	standardPrompt string = ">>>"
+	continuePrompt string = "... "
+	standardPrompt string = ">>> "
 	welcome        string = "welcome to Go+ console!"
 )
 
